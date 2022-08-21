@@ -1,5 +1,6 @@
 # Some necessary imports.
 
+from multiprocessing.dummy import freeze_support
 import dcgpy
 import pygmo as pg
 import numpy as np
@@ -35,7 +36,7 @@ archi.evolve()
 # island is, in this case, of type *thread island* indicating that its evolution is running on a separate thread
 # We can also stop the interactive session and wait for the evolution to finish
 #archi.wait_check()
-archi.wait_check()
+#archi.wait_check()
 print('reached here')
 # Let us inspect the results
 fs = archi.get_champions_f()
@@ -51,12 +52,16 @@ best_x = archi.get_champions_x()[b_idx]
 print(parse_expr(udp.prettier(best_x)))
 
 # And lets see what our model actually predicts on the inputs
-Y_pred = udp.predict(X, best_x)
+# Y_pred = udp.predict(X, best_x)
 
-# Lets comapre to the data
-_ = plt.plot(X, Y_pred, 'r.')
-_ = plt.plot(X, Y, '.', alpha=0.2)
-_ = plt.title('54 measurments')
-_ = plt.xlabel('metal distance')
-_ = plt.ylabel('ultrasonic response')
-plt.show()
+# # Lets comapre to the data
+# _ = plt.plot(X, Y_pred, 'r.')
+# _ = plt.plot(X, Y, '.', alpha=0.2)
+# _ = plt.title('54 measurments')
+# _ = plt.xlabel('metal distance')
+# _ = plt.ylabel('ultrasonic response')
+# plt.show()
+
+
+if __name__=="__main__":
+    freeze_support()
