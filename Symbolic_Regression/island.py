@@ -35,9 +35,9 @@ archi.evolve()
 # Note how in the log above the island is *busy* indicating that the evolution is running. Note also that the
 # island is, in this case, of type *thread island* indicating that its evolution is running on a separate thread
 # We can also stop the interactive session and wait for the evolution to finish
+
 #archi.wait_check()
-#archi.wait_check()
-print('reached here')
+
 # Let us inspect the results
 fs = archi.get_champions_f()
 xs = archi.get_champions_x()
