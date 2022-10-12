@@ -12,3 +12,6 @@ Contains Federated Learning Concept implementation on EMNIST Dataset.
 
 ### [Pygame Tutorials](https://github.com/HSaurabh0919/tacos/tree/main/Pygame_Tutorials)
 1. Added Simple Moving Player Game
+
+### [Added Graphs with Network Example](https://github.com/HSaurabh0919/tacos/blob/main/Graphs/Pyvis_Networkx.ipynb)
+1. Simple network and inspecting the graphs
