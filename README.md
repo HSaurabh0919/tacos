@@ -15,3 +15,6 @@ Contains Federated Learning Concept implementation on EMNIST Dataset.
 
 ### [Added Graphs with Network Example](https://github.com/HSaurabh0919/tacos/blob/main/Graphs/Pyvis_Networkx.ipynb)
 1. Simple network and inspecting the graphs
+
+### [Automatic Speech Recognition Examples](https://github.com/HSaurabh0919/tacos/tree/main/Speech)
+1. Speech to Text Using Whisper
